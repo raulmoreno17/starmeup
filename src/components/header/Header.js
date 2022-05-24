@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import SearchBar from "../searchBar/SearchBar";
+import SearchBar from "../UI/searchBar/SearchBar";
 import "./Header.scss";
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 import Avatar from "@mui/material/Avatar";

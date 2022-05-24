@@ -1,0 +1,21 @@
+.value__container {
+  background-color: gray;
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  margin: 5px 2.5px;
+  max-width: 100%;
+  position: relative;
+  width: 180px;
+  height: 54px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  .value__icon {
+    width: 34px;
+    height: 34px;
+    margin: 0 8px;
+  }
+}

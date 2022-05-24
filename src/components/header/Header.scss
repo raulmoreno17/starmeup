@@ -8,9 +8,12 @@
   top: 0;
   left: 0;
 
-  @media (min-width: 1440px) {
-    .navbar {
-      padding: 0 200px;
+  @media (max-width: 1025px) {
+    .navbar__searchbox {
+      display: none;
+    }
+    .navbar__icons-container {
+      margin-left: auto;
     }
   }
   .navbar__logo {
