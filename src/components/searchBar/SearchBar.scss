@@ -1,0 +1,28 @@
+.bar-container {
+  width: 385px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  .bar__input {
+    align-self: center;
+    width: 90%;
+    border-style: hidden;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+  }
+
+  .bar__search {
+    height: 20px;
+    padding: 5px;
+    background-color: #fafafa;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #dee0e3;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

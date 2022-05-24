@@ -1,0 +1,64 @@
+.navbar {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 340px;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .navbar__logo {
+    width: 95px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .navbar__routes-container {
+    display: flex;
+    .navbar__link {
+      text-decoration: none;
+      color: #b4b4be;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      margin: 0 15px;
+    }
+    .active {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .icon {
+    margin: 0 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .navbar__divider {
+    width: 1px;
+    height: 20px;
+    background: #7c8089;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .navbar__searchbox {
+    margin-left: auto;
+  }
+  .navbar__icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .navbar__notification {
+      height: 30px;
+      padding: 5px;
+    }
+    .navbar__avatar {
+      height: 25px;
+      width: 25px;
+    }
+    .navbar__apps {
+      height: 30px;
+      padding: 5px;
+    }
+  }
+}

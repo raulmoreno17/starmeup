@@ -6,17 +6,22 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Leaderboard from "./pages/leaderboard/Leaderboard";
 import Me from "./pages/me/Me";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import "./index.scss"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="*" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="leaderboard" element={<Leaderboard />} />
         <Route path="me" element={<Me />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
