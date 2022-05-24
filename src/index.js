@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Home from "./pages/home/Home";
+import Leaderboard from "./pages/leaderboard/Leaderboard";
+import Me from "./pages/me/Me";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="leaderboard" element={<Leaderboard />} />
+        <Route path="me" element={<Me />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
